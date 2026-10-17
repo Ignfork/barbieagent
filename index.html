@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>~*~ $BARBIE ~*~ the pinkest coin on the world wide web</title>
+<meta name="description" content="$BARBIE - a straight-up pink meme coin. best viewed in Netscape @ 800x600.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M8 1l2 5 5 .5-4 3.5 1.3 5L8 12.3 3.7 15 5 10 1 6.5 6 6z' fill='%23ff1493' stroke='%23fff'/%3E%3C/svg%3E">
+<style>
+/* ============ base ============ */
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background-color:#ff4fb0;background-repeat:repeat;color:#000;font-family:"Comic Sans MS","Comic Sans","Chalkboard SE","Comic Neue",cursive,sans-serif;font-size:15px;line-height:1.35;overflow-x:hidden;cursor:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M2 2l7 19 3-8 8-3z' fill='%23ff1493' stroke='%23fff' stroke-width='1.6'/%3E%3C/svg%3E") 2 2,auto}
+a{color:#0000ee}
+a:visited{color:#551a8b}
+a,button,select,input,textarea,label{cursor:pointer}
+input,textarea{cursor:text}
+[hidden]{display:none!important}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.wrap{max-width:1000px;margin:0 auto;padding:10px 8px 40px;display:grid;grid-template-columns:150px minmax(0,1fr) 150px;gap:12px;align-items:start}
+.side{display:flex;flex-direction:column;gap:10px;align-items:center}
+.center{min-width:0}
+
+/* ============ header ============ */
+.hdr{grid-column:1/-1;text-align:center;position:relative;padding:6px 0 2px}
+.wordart{display:inline-block;position:relative;font-family:Impact,"Arial Black","Haettenschweiler",sans-serif;font-size:clamp(54px,12vw,112px);line-height:1;letter-spacing:2px;margin:0;
+  background:linear-gradient(180deg,#fff 0%,#ffd6f0 22%,#ff1493 50%,#ffe14d 51%,#fff 70%,#ff8fd0 100%);background-size:100% 200%;-webkit-background-clip:text;background-clip:text;color:transparent;
+  -webkit-text-stroke:2px #8a0050;filter:drop-shadow(4px 4px 0 #fff) drop-shadow(7px 7px 0 #8a0050);transform:skewX(-8deg);animation:shimmer 3s linear infinite}
+@keyframes shimmer{to{background-position:0 200%}}
+.wordart .spk{position:absolute;color:#fff;font-size:.28em;-webkit-text-stroke:0;filter:none;animation:twinkle 1.4s ease-in-out infinite}
+.sub{font-family:"Times New Roman",Times,serif;font-style:italic;font-weight:bold;color:#fff;font-size:20px;text-shadow:2px 2px 0 #b0006a,-1px -1px 0 #b0006a;margin:8px 0 4px}
+.sub b{color:#ffe14d}
+.marq{background:#000;border:2px inset #ff9ad5;color:#00ff66;font-family:"Courier New",monospace;font-size:14px;overflow:hidden;white-space:nowrap;margin:6px auto 0;max-width:820px}
+.marq span{display:inline-block;padding-left:100%;animation:marq 28s linear infinite}
+.marq.pink{background:#fff0f8;color:#ff1493;border-color:#ff1493}
+@keyframes marq{to{transform:translateX(-100%)}}
+.stars{text-align:center;font-size:20px;letter-spacing:3px;line-height:1;margin:10px 0;user-select:none;white-space:nowrap;overflow:hidden}
+.stars i{font-style:normal;display:inline-block;animation:hue 2s linear infinite}
+@keyframes hue{to{filter:hue-rotate(360deg)}}
+
+/* ============ win98 windows ============ */
+.win{background:#c0c0c0;border:2px solid;border-color:#dfdfdf #404040 #404040 #dfdfdf;box-shadow:inset 1px 1px #fff,inset -1px -1px #808080,3px 3px 0 rgba(120,0,60,.35);padding:3px;margin:0 0 14px;font-family:"Times New Roman",Times,serif}
+.tb{background:linear-gradient(90deg,#000080,#1084d0);color:#fff;font:bold 13px Tahoma,"MS Sans Serif",Verdana,Arial,sans-serif;padding:3px 3px 3px 5px;display:flex;align-items:center;gap:4px;user-select:none}
+.tb.pinkbar{background:linear-gradient(90deg,#c2007a,#ff6ac1)}
+.tb .ic{width:16px;height:16px;flex:none}
+.tb .t{flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tbtn{width:18px;height:16px;padding:0;background:#c0c0c0;color:#000;border:1px solid;border-color:#fff #404040 #404040 #fff;box-shadow:inset -1px -1px #808080;font:bold 11px/12px Tahoma,Arial,sans-serif;flex:none}
+.tbtn:active{border-color:#404040 #fff #fff #404040;box-shadow:inset 1px 1px #808080}
+.wb{padding:10px 12px}
+.wb.white{background:#fff;margin:6px;border:2px solid;border-color:#808080 #fff #fff #808080;box-shadow:inset 1px 1px #404040}
+.win.shut .wb,.win.shut .menu,.win.shut .memes{display:none}
+.menu{font:12px Tahoma,Arial,sans-serif;padding:2px 4px;display:flex;gap:10px}
+.menu u{text-decoration:underline}
+.btn98{font:13px Tahoma,"MS Sans Serif",Arial,sans-serif;background:#c0c0c0;color:#000;border:2px solid;border-color:#fff #404040 #404040 #fff;box-shadow:inset -1px -1px #808080,inset 1px 1px #dfdfdf;padding:5px 14px;min-height:28px;text-decoration:none;display:inline-flex;align-items:center;gap:6px}
+.btn98:active{border-color:#404040 #fff #fff #404040;box-shadow:inset 1px 1px #808080}
+.btn98:focus-visible{outline:1px dotted #000;outline-offset:-5px}
+.btn98.hot{background:#ff1493;color:#fff;border-color:#ffb3dc #6a003c #6a003c #ffb3dc;box-shadow:inset -1px -1px #a0005a,inset 1px 1px #ff8fd0;font-weight:bold}
+.btn98.hot:hover{background:#ff3fa4}
+.btnrow{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:10px 0 4px}
+h2.cs{font-family:"Comic Sans MS","Comic Sans",cursive,sans-serif;color:#ff1493;font-size:22px;margin:0 0 6px;text-shadow:1px 1px 0 #ffd1ec}
+.blink{animation:blink 1s steps(2,start) infinite}
+@keyframes blink{to{visibility:hidden}}
+.rainbow{background:linear-gradient(90deg,#f00,#f80,#fd0,#0c0,#09f,#60f,#f0f);-webkit-background-clip:text;background-clip:text;color:transparent;font-weight:bold}
+.ca{display:block;font-family:"Courier New",monospace;font-weight:bold;word-break:break-all;background:#ffffe0;border:1px dashed #ff1493;padding:6px 8px;margin:8px 0;text-align:center;color:#0000ee;text-decoration:underline}
+button.ca{width:100%;font-size:14px}
+.dont{display:block;text-align:center;font-family:Impact,"Arial Black",sans-serif;font-size:22px;letter-spacing:.5px;color:#f00!important;margin:10px 0 2px;text-decoration:underline;animation:wobble 1.6s ease-in-out infinite}
+@keyframes wobble{0%,100%{transform:rotate(-2deg) scale(1)}50%{transform:rotate(2deg) scale(1.06)}}
+.small{font-size:12px}
+.muted{color:#555}
+.center-t{text-align:center}
+hr.pink{border:0;height:3px;background:repeating-linear-gradient(90deg,#ff1493 0 10px,#fff 10px 14px,#ffe14d 14px 24px,#fff 24px 28px);margin:12px 0}
+
+/* ============ memes ============ */
+.memes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;padding:10px;background:#fff;margin:6px;border:2px solid;border-color:#808080 #fff #fff #808080}
+.meme{margin:0;position:relative;aspect-ratio:4/3;background:#000;border:3px ridge #ff9ad5;overflow:hidden;cursor:zoom-in;padding:0;display:block;width:100%;font:inherit}
+.meme svg{display:block;width:100%;height:100%}
+.cap{position:absolute;left:4px;right:4px;text-align:center;font-family:Impact,"Anton","Arial Black",sans-serif;color:#fff;text-transform:uppercase;font-size:clamp(13px,2.5vw,19px);line-height:1.05;letter-spacing:.3px;
+  text-shadow:2px 2px 0 #000,-2px 2px 0 #000,2px -2px 0 #000,-2px -2px 0 #000,0 2px 0 #000,0 -2px 0 #000,2px 0 0 #000,-2px 0 0 #000;pointer-events:none}
+.cap.top{top:4px}.cap.bot{bottom:4px}
+.gif{position:absolute;right:3px;top:50%;transform:translateY(-50%);background:#ffe14d;color:#000;font:bold 9px Tahoma,Arial,sans-serif;padding:1px 3px;border:1px solid #000;opacity:.85}
+.meme:hover{border-color:#ff1493}
+.meme:focus-visible{outline:3px dotted #00f;outline-offset:2px}
+
+/* ============ side gifs + blinkies ============ */
+.giftile{width:130px;background:#fff;border:3px outset #ff9ad5;padding:0;overflow:hidden}
+.giftile svg{display:block;width:100%;height:auto}
+.giftile.dark{background:#000}
+.blinkie{width:150px;height:22px;display:flex;align-items:center;justify-content:center;font:bold 11px Tahoma,Verdana,Arial,sans-serif;border:1px solid #000;color:#fff;white-space:nowrap;overflow:hidden;animation:bk 1.2s steps(1) infinite}
+@keyframes bk{0%{background:#ff1493;color:#fff}50%{background:#ffd1ec;color:#c2007a}}
+.blinkie.b2{animation-name:bk2}
+@keyframes bk2{0%{background:#000;color:#ff5fb8}50%{background:#000;color:#ffe14d}}
+.blinkie.b3{animation-name:bk3}
+@keyframes bk3{0%{background:#9b5cff;color:#fff}50%{background:#ff5fb8;color:#fff}}
+.sidewin{width:150px;margin:0}
+.sidewin .wb{padding:6px;font-size:13px}
+.sidewin select{width:100%;font:12px Tahoma,Arial,sans-serif}
+.top8{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.top8 a{display:flex;flex-direction:column;align-items:center;font:10px Tahoma,Verdana,sans-serif;color:#00e;text-align:center;word-break:break-all;text-decoration:none}
+.top8 a:hover span{text-decoration:underline}
+.top8 svg{width:44px;height:44px;background:#ffe0f1;border:1px solid #ff8fd0}
+
+/* ============ realplayer ============ */
+.rp{background:#000;margin:6px;border:2px solid;border-color:#808080 #fff #fff #808080;position:relative}
+.rp svg{display:block;width:100%;height:auto}
+.rp .buf{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#7cff6b;font:bold 15px "Courier New",monospace;background:rgba(0,0,0,.85)}
+.rpbar{display:flex;align-items:center;gap:6px;padding:4px 6px;font:12px Tahoma,Arial,sans-serif}
+.rpbar .prog{flex:1;height:10px;border:2px solid;border-color:#808080 #fff #fff #808080;background:#fff;position:relative}
+.rpbar .prog i{position:absolute;left:0;top:0;bottom:0;width:0;background:#000080}
+.rpbar .clock{font-family:"Courier New",monospace;background:#000;color:#7cff6b;padding:1px 4px}
+.paused *{animation-play-state:paused!important}
+
+/* ============ quiz / facts / guestbook ============ */
+.quiz fieldset{border:2px groove #fff;margin:0 0 8px;padding:6px 10px}
+.quiz legend{font-weight:bold;color:#c2007a}
+.quiz label{display:block;padding:2px 0}
+.result{background:#fff0f8;border:2px dashed #ff1493;padding:8px;margin-top:8px;text-align:center;font-family:"Comic Sans MS",cursive,sans-serif}
+.fact{font-size:17px;min-height:48px}
+.gb-form{display:grid;gap:6px}
+.gb-form input,.gb-form textarea{font:14px "Times New Roman",serif;border:2px solid;border-color:#808080 #fff #fff #808080;padding:4px;width:100%;background:#fff}
+.gb-list{max-height:260px;overflow:auto;margin-top:10px;border:2px solid;border-color:#808080 #fff #fff #808080;background:#fff}
+.gb-e{padding:6px 8px;border-bottom:1px dotted #ff8fd0}
+.gb-e b{color:#c2007a}
+.gb-e .d{font-size:11px;color:#777}
+
+/* ============ footer ============ */
+.foot{grid-column:1/-1;text-align:center;color:#fff;font-family:"Times New Roman",serif;text-shadow:1px 1px 0 #8a0050}
+.badges{display:flex;flex-wrap:wrap;gap:6px;justify-content:center;margin:10px 0}
+.b88{width:88px;height:31px;border:1px solid #000;display:flex;flex-direction:column;justify-content:center;align-items:center;font:bold 9px/1.05 Verdana,Tahoma,Arial,sans-serif;text-shadow:none;overflow:hidden;text-align:center;padding:1px}
+.counter{display:inline-flex;gap:2px;background:#000;padding:3px;border:2px inset #999;margin:6px 0}
+.counter span{background:linear-gradient(#333,#000 50%,#222 50%,#111);color:#ff4fb0;font:bold 20px "Courier New",monospace;width:18px;text-align:center;line-height:26px}
+.disclaim{max-width:640px;margin:10px auto 0;font-size:12px;background:rgba(0,0,0,.35);padding:8px 10px;border:1px dashed #fff;text-shadow:none}
+.foot a{color:#ffe14d}
+
+/* ============ popups ============ */
+.pops{position:fixed;inset:0;pointer-events:none;z-index:50}
+.pop{position:fixed;width:min(340px,92vw);pointer-events:auto;z-index:51;animation:popin .18s ease-out}
+@keyframes popin{from{transform:scale(.6);opacity:0}}
+.pop .wb{display:flex;gap:12px;align-items:flex-start;font-size:15px}
+.pop .wb .ico{font-size:30px;line-height:1;flex:none}
+.pop .btnrow{justify-content:flex-end;margin:0;padding:0 10px 10px}
+.pop.viewer{width:min(560px,94vw)}
+.pop.viewer .wb{display:block;padding:6px}
+.pop.viewer .meme{cursor:default}
+.storm{position:fixed;inset:0;pointer-events:none;z-index:49;overflow:hidden}
+.storm i{position:absolute;top:-20px;font-style:normal;animation:fallp linear forwards}
+@keyframes fallp{to{transform:translateY(110vh) rotate(720deg)}}
+.trail{position:fixed;pointer-events:none;z-index:60;font-size:14px;animation:trail .8s ease-out forwards;transform:translate(-50%,-50%)}
+@keyframes trail{to{opacity:0;transform:translate(-50%,40%) scale(.3) rotate(160deg)}}
+body.ultra .center .win{animation:wobble 2s ease-in-out infinite}
+body.ultra .wordart{animation:shimmer .8s linear infinite,wobble 1s ease-in-out infinite}
+
+/* ============ IM window ============ */
+.im{position:fixed;left:10px;bottom:10px;width:250px;z-index:40;margin:0}
+.im .wb{padding:6px;font:13px Tahoma,Verdana,Arial,sans-serif}
+.im .logo{background:linear-gradient(#ff8fd0,#ff1493);color:#fff;font:bold 18px "Comic Sans MS",cursive,sans-serif;text-align:center;padding:8px 4px;border:2px solid;border-color:#808080 #fff #fff #808080;text-shadow:1px 1px 0 #8a0050}
+.im .logo small{display:block;font:10px Tahoma,Arial,sans-serif}
+.im label{display:block;margin:6px 0 2px}
+.im input{width:100%;font:13px Tahoma,Arial,sans-serif;border:2px solid;border-color:#808080 #fff #fff #808080;padding:3px}
+.im .chat{height:150px;overflow:auto;background:#fff;border:2px solid;border-color:#808080 #fff #fff #808080;padding:4px 6px;margin-bottom:6px;font-size:12.5px}
+.im .chat p{margin:0 0 4px;word-wrap:break-word}
+.im .chat .me b{color:#00c}
+.im .chat .her b{color:#d00070}
+.im .chat .sys{color:#888;font-style:italic}
+#imSend{display:flex;gap:4px}
+#imSend input{flex:1;min-width:0}
+.im.mini .wb{display:none}
+
+/* ============ svg animation classes ============ */
+svg .spin{transform-box:fill-box;transform-origin:center;animation:spin 3s linear infinite}
+svg .spinf{transform-box:fill-box;transform-origin:center;animation:spin .5s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+svg .bob{animation:bob .9s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-3px)}}
+svg .bobb{animation:bobb 1.2s ease-in-out infinite}
+@keyframes bobb{50%{transform:translateY(-6px)}}
+svg .tw,.tw{transform-box:fill-box;transform-origin:center;animation:twinkle 1.4s ease-in-out infinite}
+@keyframes twinkle{0%,100%{opacity:.2;transform:scale(.5)}50%{opacity:1;transform:scale(1.15)}}
+svg .bl{animation:blinkO 1s steps(1) infinite}
+@keyframes blinkO{50%{opacity:0}}
+svg .road{animation:road .45s linear infinite}
+@keyframes road{to{transform:translateX(-24px)}}
+svg .draw{stroke-dasharray:320;stroke-dashoffset:320;animation:draw 3s ease-out infinite}
+@keyframes draw{70%,100%{stroke-dashoffset:0}}
+svg .shake{transform-box:fill-box;transform-origin:center;animation:shake .35s linear infinite}
+@keyframes shake{25%{transform:translate(-1.5px,.5px) rotate(-3deg)}75%{transform:translate(1.5px,-.5px) rotate(3deg)}}
+svg .swing{transform-box:fill-box;transform-origin:50% 0;animation:swing 1.6s ease-in-out infinite}
+@keyframes swing{0%,100%{transform:rotate(-9deg)}50%{transform:rotate(9deg)}}
+svg .fillbar{transform-box:fill-box;transform-origin:0 50%;animation:fillbar 4s ease-in-out infinite}
+@keyframes fillbar{0%{transform:scaleX(0)}80%,100%{transform:scaleX(.99)}}
+svg .fly{animation:fly 3s ease-in infinite}
+@keyframes fly{0%{transform:translate(0,0)}80%{transform:translate(64px,-46px);opacity:1}81%,100%{transform:translate(64px,-46px);opacity:0}}
+svg .flame{transform-box:fill-box;transform-origin:50% 0;animation:flame .15s steps(2) infinite}
+@keyframes flame{50%{transform:scaleY(1.5)}}
+svg .flip{transform-box:fill-box;transform-origin:center;animation:flip 2.4s ease-in-out infinite}
+@keyframes flip{0%,100%{transform:scaleX(1)}50%{transform:scaleX(-1)}}
+svg .fall{animation:fall linear infinite}
+@keyframes fall{from{transform:translateY(-20px)}to{transform:translateY(100px)}}
+svg .pulse{transform-box:fill-box;transform-origin:center;animation:pulse .8s ease-in-out infinite}
+@keyframes pulse{0%,100%{transform:scale(1)}20%{transform:scale(1.18)}40%{transform:scale(.97)}}
+svg .rise{animation:rise 3s ease-in infinite}
+@keyframes rise{from{transform:translateY(0);opacity:1}to{transform:translateY(-80px);opacity:0}}
+svg .scan{animation:scan 2s linear infinite}
+@keyframes scan{from{transform:translateY(0)}to{transform:translateY(42px)}}
+svg .shine{animation:shine 2.6s ease-in-out infinite}
+@keyframes shine{0%,40%{transform:translateX(-60px)}100%{transform:translateX(70px)}}
+svg .wiggle{transform-box:fill-box;transform-origin:50% 100%;animation:wiggle .6s ease-in-out infinite}
+@keyframes wiggle{0%,100%{transform:rotate(-10deg)}50%{transform:rotate(10deg)}}
+svg .flap{transform-box:fill-box;transform-origin:100% 50%;animation:flapk .35s ease-in-out infinite}
+svg .flapR{transform-box:fill-box;transform-origin:0 50%;animation:flapk .35s ease-in-out infinite}
+@keyframes flapk{50%{transform:scaleX(.25)}}
+svg .flick{animation:flick .12s steps(2) infinite}
+@keyframes flick{50%{opacity:.55}}
+svg .hue{animation:hue 2s linear infinite}
+svg .lipup{animation:lipup 2s ease-in-out infinite}
+@keyframes lipup{0%,100%{transform:translateY(10px)}50%{transform:translateY(0)}}
+svg .sway{transform-box:fill-box;transform-origin:50% 0;animation:sway 1.8s ease-in-out infinite}
+@keyframes sway{0%,100%{transform:rotate(-6deg)}50%{transform:rotate(6deg)}}
+svg .pop1{animation:pop1 4.5s steps(1) infinite}
+svg .pop2{animation:pop2 4.5s steps(1) infinite}
+svg .pop3{animation:pop3 4.5s steps(1) infinite}
+@keyframes pop1{0%{opacity:1}}
+@keyframes pop2{0%{opacity:0}25%{opacity:1}}
+@keyframes pop3{0%{opacity:0}50%{opacity:1}}
+
+/* ============ responsive ============ */
+@media (max-width:860px){
+  .wrap{grid-template-columns:minmax(0,1fr);gap:10px;padding:8px 8px 120px}
+  .side{flex-direction:row;flex-wrap:wrap;justify-content:center}
+  .side.left{order:2}.side.right{order:3}.center{order:1}.foot{order:4}
+  .giftile{width:110px}
+  .im{width:min(250px,calc(100vw - 20px))}
+}
+@media (max-width:480px){
+  .memes{grid-template-columns:minmax(0,1fr)}
+  .sub{font-size:17px}
+  .giftile{width:96px}
+  .blinkie{width:140px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:6s!important}
+  .blink,svg .bl,.blinkie{animation:none!important}
+}
+</style>
+</head>
+<body>
+
+<div class="wrap" id="top">
+
+  <!-- ===== HEADER ===== -->
+  <header class="hdr">
+    <h1 class="wordart" aria-label="$BARBIE">$BARBIE<span class="spk" style="left:-4%;top:6%">✦</span><span class="spk" style="right:2%;top:-6%;animation-delay:.5s">✧</span><span class="spk" style="left:46%;bottom:-8%;animation-delay:.9s">✦</span></h1>
+    <p class="sub">~*~ the <b>pinkest</b> coin on the world wide web ~*~</p>
+    <div class="marq" aria-hidden="true"><span>♥ WELCOME 2 $BARBIE ♥ u have entered the pink zone ♥ no beige allowed ♥ glitter is mandatory ♥ best viewed in Netscape Navigator 4.0 @ 800x600 ♥ pls sign my guestbook!!! ♥ hot pink is not a colour it is a LIFESTYLE ♥ $BARBIE ♥ $BARBIE ♥ $BARBIE ♥</span></div>
+  </header>
+
+  <!-- ===== LEFT ===== -->
+  <aside class="side left" id="sideL" aria-label="Pink GIFs"></aside>
+
+  <!-- ===== CENTER ===== -->
+  <main class="center">
+    <div class="stars" data-stars></div>
+
+    <section class="win" aria-labelledby="w1">
+      <div class="tb"><svg class="ic" viewBox="0 0 16 16"><path d="M8 1l2 5 5 .5-4 3.5 1.3 5L8 12.3 3.7 15 5 10 1 6.5 6 6z" fill="#ff5fb8" stroke="#fff"/></svg><span class="t" id="w1">Welcome 2 $BARBIE!! ♥</span><button class="tbtn" data-help>?</button><button class="tbtn" data-close aria-label="Close window">X</button></div>
+      <div class="wb">
+        <h2 class="cs">hiii bestie!! ♥</h2>
+        <p>u found it. the most <span class="rainbow">PINK</span> place on the internet since 1999. <b>$BARBIE</b> is a meme coin on <b>Solana</b> 4 every1 who thinks the chart should be pink, the car should be a convertible & the house should be a DREAMHOUSE.</p>
+        <p>this is a <u>straight meme</u>. no roadmap. no utility. just pink. <span class="blink" style="color:#f00">♥</span></p>
+        <p style="margin:10px 0 0"><b>Contract address (click 2 copy):</b></p>
+        <button class="ca" id="ca" type="button"></button>
+        <div class="btnrow">
+          <a class="btn98 hot" id="buyBtn" href="#">♥ BUY $BARBIE ♥</a>
+          <a class="btn98" id="chartBtn" href="#">📈 Chart</a>
+          <a class="btn98" id="xBtn" href="#"><svg width="13" height="13" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg> Follow on X</a>
+        </div>
+        <a href="#" class="dont" id="dont">WHATEVER U DO, DON'T CLICK HERE!!!</a>
+      </div>
+    </section>
+
+    <section class="win" aria-labelledby="w2">
+      <div class="tb"><span class="t" id="w2">⚠ WARNING: You are on a Computer!</span><button class="tbtn" data-help>?</button><button class="tbtn" data-close aria-label="Close window">X</button></div>
+      <div class="wb" style="display:flex;gap:12px;align-items:center">
+        <span style="font-size:34px" aria-hidden="true">💖</span>
+        <div>ur monitor is now <b>94% pink</b>. do NOT adjust ur colour settings. this is normal. side effects may include: buying a pink convertible, saying "it's giving" 2 strangers & glitter in places u cant explain.</div>
+      </div>
+    </section>
+
+    <div class="stars" data-stars></div>
+
+    <section class="win" aria-labelledby="w3" id="memezone">
+      <div class="tb pinkbar"><span class="t" id="w3">📁 C:\My Documents\$BARBIE\memez</span><button class="tbtn" data-help>?</button><button class="tbtn" data-close aria-label="Close window">X</button></div>
+      <div class="menu" aria-hidden="true"><span><u>F</u>ile</span><span><u>E</u>dit</span><span><u>V</u>iew</span><span><u>P</u>ink</span><span><u>H</u>elp</span></div>
+      <div class="memes" id="memes"></div>
+    </section>
+
+    <section class="win" aria-labelledby="w4">
+      <div class="tb"><span class="t" id="w4">RealPlayer: pink_convertible_FINAL_v2.rm</span><button class="tbtn" data-help>?</button><button class="tbtn" data-close aria-label="Close window">X</button></div>
+      <div class="rp" id="rp"><div class="buf" id="rpbuf">Buffering... 0%</div></div>
+      <div class="rpbar">
+        <button class="btn98" id="rpPlay" style="padding:2px 10px;min-height:24px" aria-label="Pause">❚❚</button>
+        <div class="prog" aria-hidden="true"><i id="rpProg"></i></div>
+        <span class="clock" id="rpClock">00:00</span>
+      </div>
+    </section>
+
+    <div class="stars" data-stars></div>
+
+    <section class="win" aria-labelledby="w5">
+      <div class="tb"><span class="t" id="w5">💡 Did u know?</span><button class="tbtn" data-help>?</button><button class="tbtn" data-close aria-label="Close window">X</button></div>
+      <div class="wb white">
+        <p class="fact" id="fact" aria-live="polite"></p>
+        <div class="btnrow" style="justify-content:flex-start;margin:0"><button class="btn98" id="factBtn">Next fact &gt;&gt;</button></div>
+      </div>
+    </section>
+
+    <section class="win quiz" aria-labelledby="w6">
+      <div class="tb pinkbar"><span class="t" id="w6">~*~ QUIZ: which shade of pink r u? ~*~</span><button class="tbtn" data-help>?</button><button class="tbtn" data-close aria-label="Close window">X</button></div>
+      <form class="wb" id="quiz"></form>
+    </section>
+
+    <section class="win" aria-labelledby="w7">
+      <div class="tb"><span class="t" id="w7">📖 Sign My Guestbook!!!</span><button class="tbtn" data-help>?</button><button class="tbtn" data-close aria-label="Close window">X</button></div>
+      <div class="wb">
+        <form class="gb-form" id="gbForm">
+          <label>ur name: <input name="n" maxlength="30" required placeholder="xX_pinkprincess_Xx"></label>
+          <label>ur message: <textarea name="m" rows="3" maxlength="200" required placeholder="omg luv ur site!!!1"></textarea></label>
+          <div><button class="btn98 hot" type="submit">Sign it ♥</button> <span class="small muted">(saved in ur browser only)</span></div>
+        </form>
+        <div class="gb-list" id="gbList" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="win" aria-labelledby="w8">
+      <div class="tb"><span class="t" id="w8">📄 readme.txt (straight talk)</span><button class="tbtn" data-help>?</button><button class="tbtn" data-close aria-label="Close window">X</button></div>
+      <div class="wb white" style="font-family:'Courier New',monospace;font-size:13.5px">
+        <p style="margin-top:0">$BARBIE is a community meme coin on Solana. it's here 4 the memes, the pink & the vibes.</p>
+        <p>there is no team promise, no roadmap & no utility. it is not an investment & nothing on this page is financial advice. meme coins are super risky and can go 2 zero. only ever use money u can afford 2 lose. always check the contract address on our official X before u buy anything.</p>
+        <p style="margin-bottom:0">stay pink. stay safe. ♥</p>
+      </div>
+    </section>
+
+    <div class="stars" data-stars></div>
+  </main>
+
+  <!-- ===== RIGHT ===== -->
+  <aside class="side right" id="sideR" aria-label="More pink GIFs"></aside>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="foot">
+    <div class="marq pink" aria-hidden="true"><span>✿ thx 4 visiting!!! ✿ come back soon ✿ tell ur bestie ✿ this site is 100% hand-coded in Notepad ✿ no beige was harmed in the making of this website ✿</span></div>
+    <div class="badges" id="badges"></div>
+    <div>u r visitor #</div>
+    <div class="counter" id="counter" aria-label="visitor counter"></div>
+    <div class="small">last updated: <span id="upd"></span> · © 1999-2026 $BARBIE webmistress · <a href="#top">back 2 top ↑</a></div>
+    <p class="disclaim">$BARBIE is an independent community meme token. It is not affiliated with, endorsed by, sponsored by or connected to Mattel, Inc. or any toy brand. All characters and art on this page are original. Nothing here is financial advice.</p>
+  </footer>
+</div>
+
+<!-- ===== IM window ===== -->
+<section class="win im" id="im" aria-labelledby="imt">
+  <div class="tb pinkbar"><span class="t" id="imt">PinkBox IM</span><button class="tbtn" id="imMin" aria-label="Minimize messenger">_</button><button class="tbtn" id="imX" aria-label="Close messenger">X</button></div>
+  <div class="wb" id="imBody"></div>
+</section>
+
+<div class="pops" id="pops"></div>
+
+<script>
+(function(){
+'use strict';
+/* =========================================================
+   EDIT THESE (leave '' if not ready yet)
+   ========================================================= */
+var CONFIG = {
+  tokenCA:  '',   // e.g. 'AbC123...pump'
+  buyUrl:   '',   // e.g. 'https://pump.fun/coin/<CA>'
+  chartUrl: '',   // e.g. 'https://dexscreener.com/solana/<CA>'
+  xUrl:     ''    // e.g. 'https://x.com/yourhandle'
+};
+
+/* ---------- helpers ---------- */
+function $(s,r){return (r||document).querySelector(s)}
+function $$(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s))}
+function esc(s){return String(s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})}
+function ls(k,v){try{if(v===undefined)return localStorage.getItem(k);localStorage.setItem(k,v)}catch(e){return null}}
+function rng(seed){return function(){seed|=0;seed=seed+0x6D2B79F5|0;var t=Math.imul(seed^seed>>>15,1|seed);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}}
+var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+/* ---------- starry tiled background ---------- */
+(function(){
+  var r=rng(7),s='<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120">';
+  for(var i=0;i<14;i++){var x=(r()*120).toFixed(1),y=(r()*120).toFixed(1),z=r();
+    if(z>.72){var k=(3+r()*4).toFixed(1);s+='<path d="M'+x+' '+(y-k)+'Q'+x+' '+y+' '+(+x+ +k)+' '+y+'Q'+x+' '+y+' '+x+' '+(+y+ +k)+'Q'+x+' '+y+' '+(x-k)+' '+y+'Q'+x+' '+y+' '+x+' '+(y-k)+'Z" fill="#fff" opacity="'+(.6+r()*.4).toFixed(2)+'"/>';}
+    else s+='<circle cx="'+x+'" cy="'+y+'" r="'+(.6+r()*1.3).toFixed(1)+'" fill="'+(z>.4?'#fff':'#ffd1ec')+'" opacity="'+(.5+r()*.5).toFixed(2)+'"/>';}
+  s+='</svg>';
+  document.body.style.backgroundImage='url("data:image/svg+xml,'+encodeURIComponent(s)+'")';
+})();
+
+/* ---------- rainbow star dividers ---------- */
+$$('[data-stars]').forEach(function(el){var h='';for(var i=0;i<26;i++)h+='<i style="color:hsl('+(i*28%360)+',100%,'+(i%2?60:55)+'%);animation-delay:-'+(i*.08).toFixed(2)+'s">★</i>';el.innerHTML=h;el.setAttribute('aria-hidden','true')});
+
+/* =========================================================
+   ORIGINAL MASCOT: "Glitzi" (pink hair, star clip, heart shades)
+   ========================================================= */
+var DOLL=[
+'......hhhh..y...',
+'....hhhhhhhhyyy.',
+'...hhHHhhhhhhy..',
+'..hhHhhhhhhhhhh.',
+'..hhhssssssshhh.',
+'..hhsssssssssh..',
+'..hhkggkskggkh..',
+'..hhsssssssssh..',
+'..hhssssllsssh..',
+'..hhhsssssssh...',
+'...hh..ss..hh...',
+'....dddddddd....',
+'...dddwddwddd...',
+'..sdddddddddds..',
+'..s.dddDDddd.s..',
+'....ddddddddd...',
+'...dddddddddd...',
+'..dddDddddDddd..',
+'..dddddddddddd..',
+'.....ss..ss.....',
+'.....ss..ss.....',
+'....bbb..bbb....'];
+var PAL0={h:'#ff3fa4',H:'#ffa6dc',s:'#ffdcc8',k:'#2a0a20',g:'#ff5fb8',l:'#e0005a',d:'#ff66c4',D:'#c4006a',w:'#ffffff',y:'#fff35c',b:'#c4006a'};
+function doll(p){p=p||{};var P={};for(var k in PAL0)P[k]=p[k]||PAL0[k];var o='';
+  DOLL.forEach(function(row,y){var x=0;while(x<row.length){var c=row[x];if(c==='.'){x++;continue}var e=x;while(e<row.length&&row[e]===c)e++;o+='<rect x="'+x+'" y="'+y+'" width="'+(e-x)+'.05" height="1.05" fill="'+P[c]+'"/>';x=e}});
+  return '<g shape-rendering="crispEdges">'+o+'</g>'}
+function D(x,y,s,cls,p){return '<g transform="translate('+x+' '+y+') scale('+s+')"><g'+(cls?' class="'+cls+'"':'')+'>'+doll(p)+'</g></g>'}
+function heartP(fill,extra){return '<path d="M0 3C0-1-6-1-6 3C-6 6-1 8.5 0 11C1 8.5 6 6 6 3C6-1 0-1 0 3Z" fill="'+fill+'"'+(extra||'')+'/>'}
+function H(x,y,s,fill,cls,delay){return '<g transform="translate('+x+' '+y+') scale('+s+')"><g class="'+(cls||'')+'"'+(delay?' style="animation-delay:'+delay+'s"':'')+'>'+heartP(fill)+'</g></g>'}
+function spk(x,y,s,fill,delay){return '<g transform="translate('+x+' '+y+') scale('+s+')"><path class="tw" style="animation-delay:'+(delay||0)+'s" d="M0-6Q0 0 6 0Q0 0 0 6Q0 0-6 0Q0 0 0-6Z" fill="'+(fill||'#fff')+'"/></g>'}
+function starPts(cx,cy,R,r,n){var p=[];for(var i=0;i<n*2;i++){var a=Math.PI*i/n-Math.PI/2,q=i%2?r:R;p.push((cx+Math.cos(a)*q).toFixed(1)+','+(cy+Math.sin(a)*q).toFixed(1))}return p.join(' ')}
+function T(x,y,txt,size,fill,extra){return '<text x="'+x+'" y="'+y+'" font-size="'+size+'" fill="'+fill+'" font-family="Impact,Arial Black,sans-serif"'+(extra||'')+'>'+txt+'</text>'}
+function bgStars(seed,n,col){var r=rng(seed),o='';for(var i=0;i<n;i++)o+=spk((r()*120).toFixed(0),(r()*90).toFixed(0),.35+r()*.5,col||'#fff',(r()*1.4).toFixed(2));return o}
+
+/* =========================================================
+   MEME SCENES (all original, viewBox 0 0 120 90)
+   ========================================================= */
+var SC={
+chart:function(){var g='';for(var i=0;i<=120;i+=15)g+='<line x1="'+i+'" y1="0" x2="'+i+'" y2="90" stroke="#ff5fb8" stroke-opacity=".18"/>';for(i=0;i<=90;i+=15)g+='<line x1="0" y1="'+i+'" x2="120" y2="'+i+'" stroke="#ff5fb8" stroke-opacity=".18"/>';
+  var c='',r=rng(3),v=78;for(i=0;i<11;i++){var nv=v-(3+r()*7)+(r()<.25?6:0);c+='<rect x="'+(6+i*10)+'" y="'+Math.min(v,nv).toFixed(1)+'" width="6" height="'+Math.max(2,Math.abs(v-nv)).toFixed(1)+'" fill="'+(nv<v?'#ff1493':'#ffd1ec')+'"/>';v=nv}
+  return '<rect width="120" height="90" fill="#1b0013"/>'+g+c+'<polyline class="draw" points="4,84 18,74 30,78 44,58 56,63 70,42 82,47 96,24 116,8" fill="none" stroke="#fff35c" stroke-width="2.5" stroke-linejoin="round"/>'+T(6,30,'+∞% PINK',8,'#7cff6b',' class="bl"')},
+car:function(){var d='';for(var i=0;i<8;i++)d+='<rect x="'+(i*24)+'" y="77" width="12" height="2" fill="#fff"/>';
+  return '<defs><linearGradient id="skyC" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff6ac1"/><stop offset="1" stop-color="#ffd8ef"/></linearGradient></defs><rect width="120" height="90" fill="url(#skyC)"/><circle cx="92" cy="26" r="14" fill="#fff35c" opacity=".9"/>'+
+  '<path d="M0 66Q20 50 40 62T80 58T120 60V70H0Z" fill="#ff9ad5"/><rect y="68" width="120" height="22" fill="#3b2236"/><g class="road">'+d+'</g>'+
+  '<g class="bob">'+D(54,21,1,'')+'<path d="M10 64L18 52L48 49L56 44L76 43L84 50L106 52Q113 54 111 64Z" fill="#ff1493" stroke="#8a0050" stroke-width="1"/><path d="M56 44L62 34L66 34L62 45Z" fill="#cfefff" opacity=".8"/><rect x="14" y="55" width="94" height="2" fill="#ffd1ec"/><circle cx="105" cy="57" r="2" fill="#fff35c"/>'+
+  '<g transform="translate(30 64)"><circle r="7.5" fill="#1a1a1a"/><circle class="spinf" r="4" fill="#ddd" stroke="#888" stroke-dasharray="2 2"/></g><g transform="translate(90 64)"><circle r="7.5" fill="#1a1a1a"/><circle class="spinf" r="4" fill="#ddd" stroke="#888" stroke-dasharray="2 2"/></g></g>'},
+house:function(){return '<rect width="120" height="90" fill="#e3d0ff"/>'+bgStars(11,6,'#fff')+'<rect y="76" width="120" height="14" fill="#9be8a8"/>'+
+  '<rect x="28" y="40" width="64" height="38" fill="#ff8fd0" stroke="#c2007a"/><polygon points="22,42 60,14 98,42" fill="#ff1493" stroke="#8a0050"/><rect x="74" y="18" width="7" height="14" fill="#c2007a"/>'+
+  '<rect x="53" y="56" width="14" height="22" fill="#c2007a"/><circle cx="64" cy="67" r="1.2" fill="#fff35c"/>'+H(40,48,1,'#fff35c','bl')+H(80,48,1,'#fff35c','bl',.5)+H(60,26,.8,'#fff','pulse')+
+  '<rect x="96" y="58" width="2" height="20" fill="#7a4"/><rect x="92" y="54" width="20" height="9" fill="#fff" stroke="#c2007a"/>'+T(94,61,'SOLD♥',6.5,'#ff1493')},
+error:function(){function dlg(x,y,cls){return '<g class="'+cls+'" transform="translate('+x+' '+y+')"><rect width="84" height="46" fill="#c0c0c0" stroke="#fff"/><rect x="1" y="1" width="82" height="8" fill="#000080"/>'+T(3,7.5,'beige.exe',6,'#fff',' font-family="Tahoma,Arial,sans-serif"')+'<circle cx="13" cy="24" r="7" fill="#e00"/><path d="M10 21L16 27M16 21L10 27" stroke="#fff" stroke-width="2"/>'+
+  '<text x="24" y="22" font-size="6.5" font-family="Tahoma,Arial,sans-serif">Error 404:</text><text x="24" y="30" font-size="6.5" font-family="Tahoma,Arial,sans-serif">beige not found.</text><rect x="30" y="35" width="24" height="8" fill="#c0c0c0" stroke="#000" stroke-width=".6"/><text x="37" y="41.5" font-size="5.5" font-family="Tahoma,Arial,sans-serif">OK</text></g>'}
+  return '<rect width="120" height="90" fill="#008080"/>'+dlg(8,8,'pop1')+dlg(18,20,'pop2')+dlg(28,32,'pop3')},
+bag:function(){return '<rect width="120" height="90" fill="#ffc2e2"/>'+(function(){var o='';for(var y=6;y<90;y+=12)for(var x=(y/12%2)*6;x<120;x+=12)o+='<circle cx="'+x+'" cy="'+y+'" r="1.6" fill="#fff"/>';return o})()+
+  '<g class="swing"><path d="M44 40Q44 14 60 14Q76 14 76 40" fill="none" stroke="#8a0050" stroke-width="4"/><path d="M30 40H90L96 80H24Z" fill="#ff1493" stroke="#8a0050"/><rect x="54" y="44" width="12" height="7" rx="2" fill="#ffd700" stroke="#a07800"/><path d="M30 40H90L88 48H32Z" fill="#c2007a"/>'+H(60,58,.9,'#ffd1ec','pulse')+'</g>'+spk(22,24,1.1,'#fff',0)+spk(98,30,.9,'#fff',.6)},
+closet:function(){var o='<rect width="120" height="90" fill="#fff0f7"/><rect x="0" y="0" width="120" height="8" fill="#ffc2e2"/><rect x="4" y="18" width="112" height="2.5" fill="#999"/>',sh=['#ff1493','#ff3fa4','#ff66c4','#ff1493','#ff8fd0','#ff3fa4'];
+  for(var i=0;i<6;i++){var x=13+i*18.5;o+='<g transform="translate('+x+' 19)"><g class="sway" style="animation-delay:-'+(i*.25)+'s"><path d="M0 0V3M-6 7L0 3L6 7" stroke="#666" fill="none" stroke-width="1"/><path d="M-5 7H5L8 14L6 15L9 42H-9L-6 15L-8 14Z" fill="'+sh[i]+'" stroke="#8a0050" stroke-width=".6"/><path d="M-6 26H6" stroke="#fff" stroke-dasharray="1 1.5"/></g></g>'}
+  return o+'<rect y="76" width="120" height="14" fill="#ffd1ec"/>'},
+loading:function(){return '<rect width="120" height="90" fill="#000"/>'+T(10,26,'PINK.EXE',11,'#ff5fb8',' font-family="Courier New,monospace" font-weight="bold"')+'<text x="10" y="37" font-size="6" fill="#ccc" font-family="Courier New,monospace">installing personality...</text>'+
+  '<rect x="10" y="44" width="100" height="12" fill="none" stroke="#ff5fb8" stroke-width="1.5"/><rect class="fillbar" x="12" y="46" width="96" height="8" fill="#ff1493"/>'+T(84,26,'99%',10,'#7cff6b',' class="bl" font-family="Courier New,monospace"')+'<text x="10" y="66" font-size="5.5" fill="#888" font-family="Courier New,monospace">C:\\&gt; beige.dll deleted</text>'},
+phone:function(){var o='';for(var i=0;i<12;i++){var a=i*30*Math.PI/180;o+='<line x1="60" y1="45" x2="'+(60+Math.cos(a)*90).toFixed(1)+'" y2="'+(45+Math.sin(a)*90).toFixed(1)+'" stroke="#ff8fd0" stroke-width="6"/>'}
+  return '<rect width="120" height="90" fill="#ff5fb8"/>'+o+'<g class="shake"><rect x="57" y="6" width="3" height="10" fill="#888"/><rect x="45" y="13" width="30" height="66" rx="5" fill="#e6e0ee" stroke="#777"/><rect x="49" y="18" width="22" height="24" fill="#b8f0a0" stroke="#555"/>'+
+  '<text x="51" y="27" font-size="5" font-family="Courier New,monospace" font-weight="bold">1 NEW</text><text x="51" y="34" font-size="5" font-family="Courier New,monospace" font-weight="bold">TXT ♥</text>'+(function(){var k='';for(var r=0;r<4;r++)for(var c=0;c<3;c++)k+='<rect x="'+(50+c*7)+'" y="'+(47+r*7)+'" width="5" height="4.5" rx="1" fill="#ff8fd0"/>';return k})()+'</g>'+
+  T(8,30,'RING!',11,'#fff',' class="bl" stroke="#8a0050" stroke-width=".6"')+T(82,70,'RING!',11,'#fff',' class="bl" style="animation-delay:.5s" stroke="#8a0050" stroke-width=".6"')},
+doll:function(){return '<rect width="120" height="90" fill="#ff8fd0"/><circle cx="60" cy="50" r="38" fill="#ffd1ec"/>'+bgStars(5,9)+D(39,22,2.6,'bobb')+H(16,60,1,'#ff1493','pulse')+H(104,22,.8,'#fff','pulse')},
+moon:function(){var r=rng(9),s='';for(var i=0;i<26;i++)s+='<circle class="tw" style="animation-delay:'+(r()*1.4).toFixed(2)+'s" cx="'+(r()*120).toFixed(0)+'" cy="'+(r()*90).toFixed(0)+'" r="'+(.4+r()*.8).toFixed(1)+'" fill="#fff"/>';
+  return '<rect width="120" height="90" fill="#1d0036"/>'+s+'<circle cx="94" cy="24" r="17" fill="#ff8fd0"/><circle cx="88" cy="18" r="4" fill="#ff5fb8"/><circle cx="100" cy="30" r="3" fill="#ff5fb8"/><circle cx="96" cy="16" r="2" fill="#ff5fb8"/>'+
+  '<g transform="translate(18 76)"><g class="fly"><g transform="rotate(45)"><path d="M0-14Q6-8 6 4H-6Q-6-8 0-14Z" fill="#ff1493" stroke="#fff" stroke-width=".8"/><circle cy="-3" r="2.5" fill="#cfefff" stroke="#fff" stroke-width=".6"/><path d="M-6 0L-10 7H-5ZM6 0L10 7H5Z" fill="#c2007a"/><path class="flame" d="M-3 4L0 13L3 4Z" fill="#fff35c"/></g></g></g>'},
+heel:function(){return '<rect width="120" height="90" fill="#ffd6ec"/>'+bgStars(21,7,'#ff5fb8')+'<ellipse cx="60" cy="74" rx="38" ry="4" fill="#d48aac" opacity=".5"/>'+
+  '<g class="flip"><path d="M22 32C34 30 52 44 74 48L94 49Q102 50 102 58V62H88L86 58C70 58 52 52 36 46L33 72H29L28 45Q20 42 22 32Z" fill="#ff1493" stroke="#8a0050" stroke-width="1.2"/><path d="M88 62H102V58H88Z" fill="#8a0050"/><path d="M30 38Q48 46 72 52" stroke="#ffd1ec" stroke-width="1.4" fill="none"/>'+spk(40,40,.6,'#fff',.2)+'</g>'},
+glitter:function(){var r=rng(42),o='<rect width="120" height="90" fill="#14000d"/>',cols=['#ff1493','#ff8fd0','#fff35c','#ffffff','#9be8ff','#c49bff'];
+  for(var i=0;i<46;i++)o+='<rect class="fall" style="animation-duration:'+(1.5+r()*2.5).toFixed(2)+'s;animation-delay:-'+(r()*4).toFixed(2)+'s" x="'+(r()*118).toFixed(0)+'" y="-6" width="'+(1+r()*2).toFixed(1)+'" height="'+(1+r()*2).toFixed(1)+'" fill="'+cols[i%6]+'"/>';
+  return o+spk(30,40,2.2,'#fff',0)+spk(86,30,1.8,'#ff8fd0',.5)+spk(64,64,1.5,'#fff35c',.9)},
+disco:function(){var o='<rect width="120" height="90" fill="#2a0030"/><g style="transform-box:view-box;transform-origin:60px 22px;animation:spin 5s linear infinite">',cols=['#ff1493','#9be8ff','#fff35c','#c49bff'];
+  for(var i=0;i<8;i++)o+='<polygon points="60,22 '+(60+Math.cos(i*.785)*140).toFixed(0)+','+(22+Math.sin(i*.785)*140).toFixed(0)+' '+(60+Math.cos(i*.785+.18)*140).toFixed(0)+','+(22+Math.sin(i*.785+.18)*140).toFixed(0)+'" fill="'+cols[i%4]+'" opacity=".22"/>';
+  o+='</g><line x1="60" y1="0" x2="60" y2="8" stroke="#aaa"/><defs><clipPath id="dcl"><circle cx="60" cy="22" r="14"/></clipPath></defs><circle cx="60" cy="22" r="14" fill="#bbb"/><g clip-path="url(#dcl)">';
+  var r=rng(4);for(var y=8;y<36;y+=4)for(var x=46;x<74;x+=4)o+='<rect class="bl" style="animation-delay:-'+(r()).toFixed(2)+'s" x="'+x+'" y="'+y+'" width="3.4" height="3.4" fill="'+(r()>.5?'#fff':'#ff8fd0')+'"/>';
+  return o+'</g><rect y="74" width="120" height="16" fill="#4a0050"/>'+D(16,52,1.1,'bob')+D(86,52,1.1,'bob',{h:'#c49bff',H:'#e9d6ff'})},
+mirror:function(){var o='<rect width="120" height="90" fill="#ffc2e2"/>';for(var x=0;x<120;x+=10)o+='<rect x="'+x+'" width="5" height="90" fill="#ffd8ec"/>';
+  return o+'<defs><clipPath id="mcl"><ellipse cx="60" cy="46" rx="26" ry="34"/></clipPath></defs><ellipse cx="60" cy="46" rx="26" ry="34" fill="#e8f6ff"/><g clip-path="url(#mcl)">'+D(46,24,1.8,'bob')+'<rect class="shine" x="40" y="0" width="8" height="90" fill="#fff" opacity=".6" transform="skewX(-20)"/></g>'+
+  '<ellipse cx="60" cy="46" rx="27" ry="35" fill="none" stroke="#ffd700" stroke-width="4"/><ellipse cx="60" cy="46" rx="30" ry="38" fill="none" stroke="#ff1493" stroke-width="1.5" stroke-dasharray="2 3"/>'+spk(26,14,1,'#fff',0)+spk(96,72,1,'#fff',.7)},
+heart:function(){var o='<rect width="120" height="90" fill="#ff9ad5"/>',r=rng(8);for(var i=0;i<9;i++)o+='<g transform="translate('+(8+r()*104).toFixed(0)+' 92) scale(.6)"><g class="rise" style="animation-delay:-'+(r()*3).toFixed(2)+'s">'+heartP(i%2?'#fff':'#ff1493')+'</g></g>';
+  return o+H(60,30,4.2,'#ff1493','pulse')},
+glasses:function(){return '<rect width="120" height="90" fill="#220006"/><polyline points="4,10 18,20 32,16 46,34 60,30 76,52 90,46 116,82" fill="none" stroke="#ff2a2a" stroke-width="3"/>'+
+  '<g class="bob"><g transform="translate(36 34) scale(2.6)">'+heartP('#ff1493',' fill-opacity=".6" stroke="#111" stroke-width="1"')+'</g><g transform="translate(84 34) scale(2.6)">'+heartP('#ff1493',' fill-opacity=".6" stroke="#111" stroke-width="1"')+'</g><path d="M50 38Q60 32 70 38" stroke="#111" stroke-width="2.5" fill="none"/><path d="M20 40L6 34M100 40L114 34" stroke="#111" stroke-width="2.5"/></g>'},
+crt:function(){return '<rect width="120" height="90" fill="#ffeef7"/><rect x="20" y="6" width="80" height="62" rx="6" fill="#e6dccb" stroke="#a89880"/><rect x="28" y="12" width="64" height="46" rx="3" fill="#ff5fb8"/>'+
+  '<defs><clipPath id="ccl"><rect x="28" y="12" width="64" height="46" rx="3"/></clipPath></defs><g clip-path="url(#ccl)"><rect class="scan" x="28" y="12" width="64" height="4" fill="#fff" opacity=".35"/></g>'+
+  '<text x="34" y="30" font-size="7" fill="#fff" font-family="Courier New,monospace" font-weight="bold" class="bl">CONNECTING...</text><text x="34" y="42" font-size="6" fill="#fff" font-family="Courier New,monospace">56k ♥ pink.net</text><text x="34" y="52" font-size="5" fill="#ffe0f1" font-family="Courier New,monospace">beep boop kshhhh</text>'+
+  '<rect x="48" y="68" width="24" height="6" fill="#d6ccba"/><rect x="34" y="74" width="52" height="5" rx="2" fill="#e6dccb" stroke="#a89880"/><circle cx="90" cy="63" r="1.6" fill="#7cff6b" class="bl"/>'},
+convo:function(){return '<rect width="120" height="90" fill="#c0c0c0"/><rect x="4" y="4" width="112" height="9" fill="#000080"/>'+T(7,11,'IM w/ bestie',6,'#fff',' font-family="Tahoma,Arial,sans-serif"')+'<rect x="6" y="16" width="108" height="68" fill="#fff"/>'+
+  '<text font-family="Tahoma,Arial,sans-serif" font-size="6.2"><tspan x="10" y="28" fill="#00c" font-weight="bold">bestie:</tspan><tspan> what color is ur car</tspan><tspan x="10" y="40" fill="#d00070" font-weight="bold">me:</tspan><tspan> pink</tspan><tspan x="10" y="52" fill="#00c" font-weight="bold">bestie:</tspan><tspan> house?</tspan><tspan x="10" y="64" fill="#d00070" font-weight="bold">me:</tspan><tspan> pink</tspan><tspan x="10" y="76" fill="#00c" font-weight="bold">bestie:</tspan><tspan> ur bags?</tspan></text>'},
+lips:function(){return '<rect width="120" height="90" fill="#fff0f7"/>'+bgStars(31,6,'#ff8fd0')+'<g transform="translate(44 18)"><rect x="4" y="34" width="24" height="34" rx="2" fill="#ffd700" stroke="#a07800"/><g class="lipup"><path d="M7 34V14L17 6L25 12V34Z" fill="#ff1493" stroke="#8a0050"/></g><rect x="2" y="32" width="28" height="5" fill="#e0b400"/></g>'+H(92,30,1.2,'#ff1493','pulse')+'<path d="M80 62Q92 56 104 62Q92 72 80 62Z" fill="#e0005a"/><path d="M80 62H104" stroke="#8a0050" stroke-width=".8"/>'}
+};
+
+var MEMES=[
+ ['my portfolio','pink & going up','chart'],
+ ['who needs a lambo','when u got a pink convertible','car'],
+ ['dreamhouse fund','loading... 0.0001%','house'],
+ ['error 404','beige not found','error'],
+ ['holding bags?','only designer ones','bag'],
+ ['my closet:','all pink. no notes.','closet'],
+ ['installing personality.exe','100% pink','loading'],
+ ['1 new txt from future me:','stay pink','phone'],
+ ['not a phase mom','its a LIFESTYLE','doll'],
+ ['to the moon?','no. to the PINK moon','moon'],
+ ['heels on','chart up','heel'],
+ ['glitter isnt a craft','its a love language','glitter'],
+ ['disco in the dreamhouse','every. single. night.','disco'],
+ ['mirror mirror on the wall','whos the pinkest of them all','mirror'],
+ ['he said pick a color','i said hot pink x1000','heart'],
+ ['when the chart is red','but ur glasses r pink','glasses'],
+ ['dial-up sounds','but make it pink','crt'],
+ ['','me: pink. every time.','convo'],
+ ['lipgloss popping','candles pumping','lips'],
+ ['me in 1999','me in 2026: still pink','doll']
+];
+function memeHTML(m,i){return '<svg viewBox="0 0 120 90" preserveAspectRatio="xMidYMid slice" aria-hidden="true">'+SC[m[2]]()+'</svg>'+(m[0]?'<span class="cap top">'+esc(m[0])+'</span>':'')+'<span class="cap bot">'+esc(m[1])+'</span><span class="gif">GIF</span>'}
+$('#memes').innerHTML=MEMES.map(function(m,i){return '<button type="button" class="meme" data-i="'+i+'" aria-label="Meme: '+esc((m[0]+' '+m[1]).trim())+'. Click to enlarge">'+memeHTML(m,i)+'</button>'}).join('');
+
+/* =========================================================
+   SIDE "GIFS" (viewBox 0 0 100 70)
+   ========================================================= */
+var G={
+spinstar:function(){return '<rect width="100" height="70" fill="#000"/>'+bgStars(2,5)+'<g class="hue"><polygon class="spin" points="'+starPts(50,35,28,12,5)+'" fill="#ffe14d" stroke="#ff1493" stroke-width="2"/></g>'},
+hot:function(){return '<rect width="100" height="70" fill="#000"/><g transform="translate(0 52)"><path class="flame" d="M8 0Q14-26 22-6Q26-30 36-4Q42-34 50-6Q58-30 64-4Q72-28 80-6Q86-24 92 0Z" fill="#ff7a00"/><path class="flame" style="animation-delay:.07s" d="M14 0Q20-14 26-2Q32-18 40-2Q48-20 56-2Q64-18 70-2Q78-14 86 0Z" fill="#ffe14d"/></g>'+T(12,48,'HOT!!',30,'#ff1493',' class="flick" stroke="#fff" stroke-width="1.5"')},
+newb:function(){return '<rect width="100" height="70" fill="#fff"/><polygon class="spin" points="'+starPts(50,35,32,22,14)+'" fill="#f00"/>'+T(29,43,'NEW!',21,'#ffe14d',' class="bl" stroke="#000" stroke-width=".8"')},
+email:function(){return '<rect width="100" height="70" fill="#ffd1ec"/><g class="bobb"><rect x="28" y="14" width="44" height="30" fill="#fff" stroke="#c2007a" stroke-width="2"/><path d="M28 14L50 32L72 14" fill="none" stroke="#c2007a" stroke-width="2"/>'+H(50,34,.7,'#ff1493')+'</g>'+T(16,63,'e-mail me!',14,'#c2007a',' font-family="Comic Sans MS,cursive"')},
+construct:function(){var s='';for(var i=-20;i<110;i+=14)s+='<polygon points="'+i+',0 '+(i+7)+',0 '+(i-3)+',12 '+(i-10)+',12" fill="#000"/>';
+  return '<rect width="100" height="70" fill="#ffe14d"/><g>'+s+'</g><g transform="translate(0 58)">'+s+'</g>'+T(9,32,'UNDER',15,'#000')+T(9,48,'CONSTRUCTION',10.5,'#000')+'<circle cx="86" cy="26" r="6" fill="#f00" class="bl"/>'},
+dancer:function(){return '<rect width="100" height="70" fill="#ffc2e2"/>'+bgStars(17,5)+D(36,8,1.7,'wiggle')+'<rect y="64" width="100" height="6" fill="#ff1493"/>'},
+cd:function(){var cols=['#f00','#f80','#fd0','#0c0','#09f','#60f','#f0f'],o='<rect width="100" height="70" fill="#000"/><g class="spin">';
+  for(var i=0;i<7;i++)o+='<circle cx="50" cy="35" r="'+(10+i*3.2)+'" fill="none" stroke="'+cols[i]+'" stroke-width="3.4" stroke-dasharray="'+(8+i*3)+' '+(6+i*2)+'" opacity=".85"/>';
+  return o+'<circle cx="50" cy="35" r="31" fill="none" stroke="#ccc" stroke-width="1.5"/></g><circle cx="50" cy="35" r="7" fill="#000" stroke="#ccc"/>'},
+butterfly:function(){return '<rect width="100" height="70" fill="#e9d6ff"/>'+bgStars(23,5,'#ff8fd0')+'<g class="bobb"><g class="flap"><path d="M50 35C40 10 18 12 22 30C24 40 40 40 50 35ZM50 35C40 46 26 58 34 60C42 62 48 48 50 35Z" fill="#ff1493" stroke="#8a0050"/></g><g class="flapR"><path d="M50 35C60 10 82 12 78 30C76 40 60 40 50 35ZM50 35C60 46 74 58 66 60C58 62 52 48 50 35Z" fill="#ff5fb8" stroke="#8a0050"/></g><rect x="48.5" y="24" width="3" height="24" rx="1.5" fill="#2a0a20"/></g>'},
+text3d:function(){return '<rect width="100" height="70" fill="#000"/>'+bgStars(29,6)+'<g class="flip"><text x="50" y="44" text-anchor="middle" font-size="22" font-family="Impact,Arial Black,sans-serif" fill="#ff1493" stroke="#fff" stroke-width="1">$BARBIE</text></g>'},
+lipsg:function(){return '<rect width="100" height="70" fill="#fff"/><g transform="translate(36 6)"><rect x="4" y="34" width="20" height="28" rx="2" fill="#ffd700" stroke="#a07800"/><g class="lipup"><path d="M7 34V16L15 8L21 13V34Z" fill="#ff1493" stroke="#8a0050"/></g><rect x="2" y="32" width="24" height="4" fill="#e0b400"/></g>'+spk(20,20,1,'#ff8fd0',0)+spk(80,44,1,'#ff8fd0',.6)},
+sparkle:function(){return '<rect width="100" height="70" fill="#ff1493"/>'+spk(26,24,2.2,'#fff',0)+spk(70,20,1.6,'#fff35c',.4)+spk(52,50,2,'#fff',.8)+spk(84,54,1.1,'#ffd1ec',1.1)+spk(14,56,1,'#fff35c',.3)},
+heartb:function(){return '<rect width="100" height="70" fill="#000"/>'+H(50,14,3,'#ff1493','pulse')+T(18,66,'♥ LUV U ♥',12,'#ff8fd0',' font-family="Comic Sans MS,cursive" class="bl"')},
+kitty:function(){return '<rect width="100" height="70" fill="#d6f5ff"/><g class="bob"><path d="M30 26L34 10L44 20H56L66 10L70 26Q76 54 50 56Q24 54 30 26Z" fill="#fff" stroke="#c2007a" stroke-width="1.6"/><circle cx="42" cy="34" r="2.5" fill="#2a0a20"/><circle cx="58" cy="34" r="2.5" fill="#2a0a20"/><path d="M48 40H52L50 42Z" fill="#ff8fd0"/><path d="M36 40H26M36 43H27M64 40H74M64 43H73" stroke="#c2007a" stroke-width=".8"/>'+H(62,14,.7,'#ff1493')+'</g>'+T(26,67,'nya~ ♥',10,'#c2007a',' font-family="Comic Sans MS,cursive"')}
+};
+function gifTile(k,dark){return '<div class="giftile'+(dark?' dark':'')+'" aria-hidden="true"><svg viewBox="0 0 100 70">'+G[k]()+'</svg></div>'}
+var BLINK=[['i ♥ pink',''],['$BARBIE gurl 4 life','b2'],['y2k forever ✿','b3'],['glitter = personality',''],['plastic & proud','b2'],['dreamhouse dweller','b3'],['no beige zone',''],['pink is my fav color','b2']];
+function blinkie(b,i){return '<div class="blinkie '+b[1]+'" style="animation-delay:-'+(i*.3)+'s" aria-hidden="true">'+b[0]+'</div>'}
+var drops='';for(var di=620;di>600;di--)drops+='<option>glitter drop #'+di+': '+(di%3?'3 sparkles':'1 pink heart')+'</option>';
+$('#sideL').innerHTML=
+  gifTile('spinstar',1)+blinkie(BLINK[0],0)+gifTile('dancer')+gifTile('hot',1)+blinkie(BLINK[1],1)+gifTile('email')+
+  '<section class="win sidewin" aria-label="Glitter drops"><div class="tb"><span class="t">Glitter Drops</span></div><div class="wb"><label class="sr" for="dropsel">past glitter drops</label><select id="dropsel"><option>∞ PAST Glitter Drops</option>'+drops+'</select><p class="small" style="margin:6px 0 0">(they r imaginary. like calories in pink frosting)</p></div></section>'+
+  gifTile('cd',1)+blinkie(BLINK[2],2)+gifTile('butterfly')+gifTile('construct')+blinkie(BLINK[3],3)+gifTile('kitty');
+var FRIENDS=[['Glitzi',{}],['xX_GlitterQueen_Xx',{h:'#ffe14d',H:'#fff6a8'}],['pinkprincess2001',{h:'#8a4b2a',H:'#b9784f',d:'#ff1493'}],['~*sparkle*~',{h:'#c49bff',H:'#e9d6ff',d:'#9be8ff'}],['hotpink4ever',{h:'#ff1493',d:'#ff1493'}],['y2k_babe',{h:'#222',H:'#555',d:'#c49bff'}],['lipgloss_lord',{h:'#ff7a00',H:'#ffb066',d:'#ff8fd0'}],['webmistress',{h:'#9be8ff',H:'#e0faff'}]];
+$('#sideR').innerHTML=
+  gifTile('text3d',1)+blinkie(BLINK[4],4)+
+  '<section class="win sidewin" aria-label="Top 8 bestiez"><div class="tb pinkbar"><span class="t">My Top 8 ♥</span></div><div class="wb"><div class="top8">'+FRIENDS.map(function(f){return '<a href="#" data-friend="'+esc(f[0])+'"><svg viewBox="0 0 16 14" aria-hidden="true"><g transform="translate(0 0.5) scale(.62)">'+doll(f[1])+'</g><g transform="translate(5 0) scale(.6)"></g></svg><span>'+esc(f[0])+'</span></a>'}).join('')+'</div></div></section>'+
+  gifTile('newb')+gifTile('heartb',1)+blinkie(BLINK[5],5)+gifTile('lipsg')+gifTile('sparkle')+blinkie(BLINK[6],6)+gifTile('spinstar',1)+blinkie(BLINK[7],7);
+/* top-8 avatars: zoom to the head */
+$$('.top8 svg').forEach(function(s){s.setAttribute('viewBox','2 0 12 11')});
+$$('.top8 svg g[transform]').forEach(function(g,i){if(i%2===0)g.setAttribute('transform','')});
+
+/* =========================================================
+   CONFIG-driven links
+   ========================================================= */
+var caEl=$('#ca');
+if(CONFIG.tokenCA){caEl.textContent=CONFIG.tokenCA}else{caEl.textContent='dropping soon!! watch our X 4 it ♥';caEl.style.textDecoration='none';caEl.style.color='#c2007a'}
+caEl.addEventListener('click',function(){
+  if(!CONFIG.tokenCA){popup('Contract address','💌','the CA isnt posted here yet bestie. only trust the one on our official X!!');return}
+  var done=function(){popup('Copied!!','📋','CA copied 2 ur clipboard ♥<br><small>'+esc(CONFIG.tokenCA)+'</small>')};
+  try{navigator.clipboard.writeText(CONFIG.tokenCA).then(done,function(){fallbackCopy();done()})}catch(e){fallbackCopy();done()}
+});
+function fallbackCopy(){var t=document.createElement('textarea');t.value=CONFIG.tokenCA;document.body.appendChild(t);t.select();try{document.execCommand('copy')}catch(e){}t.remove()}
+function wire(id,url,what){var a=$(id);if(url){a.href=url;a.target='_blank';a.rel='noopener noreferrer'}else a.addEventListener('click',function(e){e.preventDefault();popup(what,'⏳',what+' link coming soon!! check back l8r ♥')})}
+wire('#buyBtn',CONFIG.buyUrl,'Buy');wire('#chartBtn',CONFIG.chartUrl,'Chart');wire('#xBtn',CONFIG.xUrl,'X');
+
+/* =========================================================
+   POPUPS
+   ========================================================= */
+var popN=0;
+function popup(title,icon,html,buttons,opts){
+  opts=opts||{};var w=document.createElement('div');w.className='win pop'+(opts.cls?' '+opts.cls:'');w.setAttribute('role','dialog');w.setAttribute('aria-label',title);
+  var vw=innerWidth,vh=innerHeight,pw=Math.min(opts.cls==='viewer'?560:340,vw*.92);
+  var x=Math.max(8,Math.min(vw-pw-8,(vw-pw)/2+(popN%5-2)*22)),y=Math.max(8,Math.min(vh-260,vh*.22+(popN%5)*20));popN++;
+  w.style.left=x+'px';w.style.top=y+'px';
+  w.innerHTML='<div class="tb'+(opts.pink?' pinkbar':'')+'"><span class="t">'+esc(title)+'</span><button class="tbtn" data-x aria-label="Close">X</button></div><div class="wb">'+(icon?'<span class="ico" aria-hidden="true">'+icon+'</span>':'')+'<div>'+html+'</div></div><div class="btnrow"></div>';
+  var row=$('.btnrow',w);(buttons||[['OK']]).forEach(function(b){var bt=document.createElement('button');bt.className='btn98';bt.textContent=b[0];bt.addEventListener('click',function(){w.remove();if(b[1])b[1]()});row.appendChild(bt)});
+  $('[data-x]',w).addEventListener('click',function(){w.remove()});
+  w.addEventListener('keydown',function(e){if(e.key==='Escape')w.remove()});
+  $('#pops').appendChild(w);var f=$('.btnrow button',w);if(f)f.focus();return w}
+
+/* window title-bar buttons */
+var HELP=['help? there is no help. only pink.','tip: pink goes with everything. especially pink.','have u tried turning it off and on again? (it will still be pink)','clippy is on vacation. glitzi is covering.'];
+$$('[data-help]').forEach(function(b,i){b.setAttribute('aria-label','Help');b.addEventListener('click',function(){popup('Help','❓',HELP[i%HELP.length])})});
+$$('[data-close]').forEach(function(b){b.addEventListener('click',function(){var w=b.closest('.win');
+  popup('Close window?','🥺','u cant close pink. pink is forever.',[['ok fine',function(){}],['minimize it',function(){w.classList.toggle('shut')}]])})});
+
+/* meme viewer */
+$('#memes').addEventListener('click',function(e){var b=e.target.closest('.meme');if(!b)return;var m=MEMES[+b.dataset.i];
+  popup('meme_viewer.exe','', '<div class="meme" style="cursor:default">'+memeHTML(m)+'</div><p class="small center-t" style="margin:6px 0 0">right-click 2 save? lol no. screenshot it bestie ♥</p>',[['Next meme >>',function(){var n=$('#memes .meme[data-i="'+((+b.dataset.i+1)%MEMES.length)+'"]');n.click()}],['Close']],{cls:'viewer',pink:true})});
+
+/* DON'T CLICK */
+$('#dont').addEventListener('click',function(e){e.preventDefault();
+  popup('⚠ WARNING ⚠','😱','u clicked it. r u SURE u want 2 continue??',[['YES',storm],['also yes',storm]])});
+function storm(){
+  var n=+(ls('bb_clicks')||0)+1;ls('bb_clicks',n);
+  var s=document.createElement('div');s.className='storm';var ch=['✦','♥','✧','★','💖','✿','💅','👠'],h='';
+  for(var i=0;i<(reduce?30:140);i++)h+='<i style="left:'+(Math.random()*100).toFixed(1)+'vw;font-size:'+(12+Math.random()*26|0)+'px;color:hsl('+(300+Math.random()*60|0)+',100%,'+(55+Math.random()*30|0)+'%);animation-duration:'+(2+Math.random()*3).toFixed(2)+'s;animation-delay:'+(Math.random()*1.5).toFixed(2)+'s">'+ch[i%ch.length]+'</i>';
+  s.innerHTML=h;document.body.appendChild(s);setTimeout(function(){s.remove()},7000);
+  document.body.classList.add('ultra');setTimeout(function(){document.body.classList.remove('ultra')},6000);
+  setTimeout(function(){popup('congrats!!!','🎀','u r now <b>1000% PINK</b>. there is no going back.<br><small>times clicked: '+n+'</small>',[['yay ♥']],{pink:true})},900)}
+
+/* =========================================================
+   REALPLAYER
+   ========================================================= */
+(function(){
+  var rp=$('#rp'),buf=$('#rpbuf'),prog=$('#rpProg'),clock=$('#rpClock'),btn=$('#rpPlay');
+  var road='';for(var i=0;i<14;i++)road+='<rect x="'+(i*24)+'" y="146" width="12" height="3" fill="#fff"/>';
+  var palms='';for(i=0;i<5;i++)palms+='<g transform="translate('+(i*90+20)+' 0)"><rect x="-2" y="80" width="4" height="56" fill="#8a4b2a"/><path d="M0 80Q-20 70-30 84M0 80Q20 68 32 82M0 80Q-8 62-22 60M0 80Q10 62 24 62" stroke="#2fbf71" stroke-width="5" fill="none"/></g>';
+  rp.insertAdjacentHTML('afterbegin','<svg viewBox="0 0 320 180" aria-label="Animated clip: Glitzi drives a pink convertible past palm trees"><defs><linearGradient id="rsk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff4fb0"/><stop offset=".6" stop-color="#ffb3dc"/><stop offset="1" stop-color="#ffe1f0"/></linearGradient></defs>'+
+   '<rect width="320" height="180" fill="url(#rsk)"/><circle cx="250" cy="70" r="34" fill="#fff35c" opacity=".9"/><rect x="216" y="70" width="68" height="3" fill="#ffb3dc"/><rect x="216" y="80" width="68" height="4" fill="#ffb3dc"/><rect x="216" y="92" width="68" height="5" fill="#ffb3dc"/>'+
+   '<g style="animation:road 3s linear infinite"><g style="animation:none">'+'</g></g><g class="road" style="animation-duration:2.4s"><g transform="translate(0 0)">'+palms+'</g></g>'+
+   '<rect y="132" width="320" height="48" fill="#3b2236"/><g class="road">'+road+'</g>'+
+   '<g transform="translate(90 38) scale(1.9)" class=""><g class="bob">'+D(54,21,1,'')+'<path d="M10 64L18 52L48 49L56 44L76 43L84 50L106 52Q113 54 111 64Z" fill="#ff1493" stroke="#8a0050" stroke-width="1"/><path d="M56 44L62 34L66 34L62 45Z" fill="#cfefff" opacity=".8"/><rect x="14" y="55" width="94" height="2" fill="#ffd1ec"/><circle cx="105" cy="57" r="2" fill="#fff35c"/>'+
+   '<g transform="translate(30 64)"><circle r="7.5" fill="#1a1a1a"/><circle class="spinf" r="4" fill="#ddd" stroke="#888" stroke-dasharray="2 2"/></g><g transform="translate(90 64)"><circle r="7.5" fill="#1a1a1a"/><circle class="spinf" r="4" fill="#ddd" stroke="#888" stroke-dasharray="2 2"/></g></g></g>'+
+   '<text x="12" y="24" font-family="Impact,Arial Black,sans-serif" font-size="18" fill="#fff" stroke="#8a0050" stroke-width="1">$BARBIE</text><text x="12" y="38" font-family="Courier New,monospace" font-size="9" fill="#fff">NOW PLAYING: pink_convertible.rm</text></svg>');
+  var pct=0,t0=Date.now(),paused=false,el=0;
+  var bi=setInterval(function(){pct+=Math.ceil(Math.random()*18);if(pct>=100){clearInterval(bi);buf.remove()}else buf.textContent='Buffering... '+pct+'%'},260);
+  setInterval(function(){if(paused||document.hidden)return;el+=.5;var s=el%213;prog.style.width=(s/213*100)+'%';clock.textContent=('0'+(s/60|0)).slice(-2)+':'+('0'+(s%60|0)).slice(-2)},500);
+  btn.addEventListener('click',function(){paused=!paused;rp.classList.toggle('paused',paused);btn.textContent=paused?'▶':'❚❚';btn.setAttribute('aria-label',paused?'Play':'Pause')});
+})();
+
+/* =========================================================
+   FACTS
+   ========================================================= */
+var FACTS=[
+ 'flamingos r pink bc of what they eat. so technically u r what u eat. eat pink.',
+ 'there is no such thing as "too much glitter". scientists have looked.',
+ 'a pink convertible goes 0-60 in "omg is that a pink convertible" seconds.',
+ 'the first website was not pink. we fixed that.',
+ 'beige was invented in 1987 by a man who had never been 2 a party.',
+ 'hot pink, bubblegum, magenta, fuchsia & blush walk into a bar. its just a pink bar.',
+ 'a dreamhouse has 0 beige rooms. this is in the building code. (our building code.)',
+ 'u can fit 4 bestiez, 6 shopping bags & 1 small dog in a convertible. we checked.',
+ 'saying "it\'s giving" 3 times in a mirror summons Glitzi.',
+ 'the internet is 0.02% pink. this website is doing its best 2 raise that number.',
+ 'Glitzi has 47 pairs of heels. all pink. she still says she has "nothing 2 wear".',
+ 'every time u say "beige" a glitter fairy loses her sparkle. pls be careful.'];
+var fi=Math.floor(Math.random()*FACTS.length);
+function showFact(){$('#fact').textContent='✿ '+FACTS[fi%FACTS.length];fi++}
+showFact();$('#factBtn').addEventListener('click',showFact);
+
+/* =========================================================
+   QUIZ
+   ========================================================= */
+var Q=[
+ ['ur dream ride?',[['pink convertible, top down','hot'],['a scooter w/ streamers','bub'],['a pink limo w/ a disco ball','mag'],['a bike w/ a flower basket','blu']]],
+ ['pick a snack:',[['strawberry milkshake','bub'],['dragonfruit everything','mag'],['cotton candy','hot'],['peach tea','blu']]],
+ ['ur away message would say:',[['brb, being iconic','hot'],['@ the mall ♥ txt me','bub'],['dancing. dont wait up','mag'],['napping in a sunbeam','blu']]]];
+var RES={hot:['HOT PINK','main character energy. u walk in & the room turns pink. no notes.'],bub:['BUBBLEGUM PINK','sweet, bubbly & always down 4 the mall. every1s bestie.'],mag:['MAGENTA','extra in the best way. u bring the disco ball 2 brunch.'],blu:['BLUSH PINK','soft, cozy & secretly the most stylish 1 here.']};
+$('#quiz').innerHTML=Q.map(function(q,i){return '<fieldset><legend>'+(i+1)+'. '+esc(q[0])+'</legend>'+q[1].map(function(a){return '<label><input type="radio" name="q'+i+'" value="'+a[1]+'" required> '+esc(a[0])+'</label>'}).join('')+'</fieldset>'}).join('')+'<button class="btn98 hot" type="submit">tell me my pink!!</button><div id="qres" aria-live="polite"></div>';
+$('#quiz').addEventListener('submit',function(e){e.preventDefault();var c={};Q.forEach(function(q,i){var v=($('input[name="q'+i+'"]:checked')||{}).value;if(v)c[v]=(c[v]||0)+1});
+  var best='hot',m=-1;for(var k in c)if(c[k]>m){m=c[k];best=k}
+  $('#qres').innerHTML='<div class="result"><div class="small">u r...</div><div class="rainbow" style="font-size:26px">'+RES[best][0]+'</div><div>'+RES[best][1]+'</div></div>'});
+
+/* =========================================================
+   GUESTBOOK (local only)
+   ========================================================= */
+var SEED=[['webmistress','welcome 2 the guestbook!! be nice, be pink ♥','10/16/2026'],['~ a flamingo ~','*stands on 1 leg approvingly*','10/16/2026'],['Glitzi','who keeps leaving beige socks in the dreamhouse. not funny.','10/15/2026']];
+function gbLoad(){try{return JSON.parse(ls('bb_gb')||'[]')}catch(e){return[]}}
+function gbRender(){var all=gbLoad().concat(SEED);$('#gbList').innerHTML=all.map(function(e){return '<div class="gb-e"><b>'+esc(e[0])+'</b> wrote: <span class="d">'+esc(e[2])+'</span><div>'+esc(e[1])+'</div></div>'}).join('')}
+gbRender();
+$('#gbForm').addEventListener('submit',function(e){e.preventDefault();var f=e.target,n=f.n.value.trim(),m=f.m.value.trim();if(!n||!m)return;
+  var d=new Date(),ds=(d.getMonth()+1)+'/'+d.getDate()+'/'+d.getFullYear(),l=gbLoad();l.unshift([n.slice(0,30),m.slice(0,200),ds]);ls('bb_gb',JSON.stringify(l.slice(0,50)));f.reset();gbRender();
+  popup('Guestbook','💌','thx 4 signing '+esc(n)+'!! ur the best ♥',null,{pink:true})});
+
+/* =========================================================
+   FOOTER: badges, counter, date
+   ========================================================= */
+var BADGES=[['Best viewed in','NETSCAPE 4.0','#000080','#fff'],['♥ PINK','POWERED ♥','#ff1493','#fff'],['Y2K','COMPLIANT ✓','#000','#7cff6b'],['made w/','NOTEPAD.EXE','#fff','#000'],['$BARBIE','ON SOLANA','#14002a','#c49bff'],['ANTI-BEIGE','LEAGUE','#ffe14d','#c2007a'],['800x600','OR BUST','#c0c0c0','#000'],['GET','GLITTER!!','#ff8fd0','#fff'],['NO','BEIGE ZONE','#f00','#fff'],['dial-up','FRIENDLY 56k','#008080','#fff']];
+$('#badges').innerHTML=BADGES.map(function(b){return '<div class="b88" style="background:'+b[2]+';color:'+b[3]+'" aria-label="'+esc(b[0]+' '+b[1])+'"><span style="font-weight:normal">'+b[0]+'</span><span>'+b[1]+'</span></div>'}).join('');
+(function(){var v=+(ls('bb_visits')||0)+1;ls('bb_visits',v);var base=69420+Math.floor((Date.now()-Date.UTC(2026,9,16))/36e5)*7;var n=String(Math.max(69420,base)+v);while(n.length<7)n='0'+n;
+  $('#counter').innerHTML=n.split('').map(function(c){return '<span>'+c+'</span>'}).join('')})();
+(function(){var d=new Date();$('#upd').textContent=(d.getMonth()+1)+'/'+d.getDate()+'/'+d.getFullYear()})();
+
+/* =========================================================
+   PINKBOX IM
+   ========================================================= */
+(function(){
+  var im=$('#im'),body=$('#imBody'),name=ls('bb_sn')||'';
+  var LINES=['omg hiii!!! ♥','is it giving?? bc it is GIVING','brb doing my lipgloss','just got back from the mall. bought pink. obviously.','have u signed the guestbook yet? 👀','pink convertible > every other car. i dont make the rules','r u wearing pink rn? be honest','lol','the dreamhouse disco is 2nite!!','ok but did u click the button u werent supposed 2 click','beige? in THIS economy??','g2g my 47 pairs of heels need organizing','stay pink bestie ✿','$BARBIE is a meme. i am a lifestyle.','*glitter noises*'];
+  function login(){body.innerHTML='<div class="logo">PinkBox IM<small>~ instant messenger 4 pink people ~</small></div><form id="imLogin"><label for="imSn">Screen Name:</label><input id="imSn" maxlength="20" placeholder="xX_pinkprincess_Xx" required><label for="imPw">Password:</label><input id="imPw" type="password" placeholder="(anything lol, nothing is saved)"><div class="btnrow" style="justify-content:flex-end;margin-top:8px"><button class="btn98 hot" type="submit">Sign On</button></div></form><p class="small muted" style="margin:4px 0 0">just 4 fun. never type a real password online!!</p>';
+    $('#imLogin').addEventListener('submit',function(e){e.preventDefault();name=$('#imSn').value.trim().slice(0,20)||'pinkfan';ls('bb_sn',name);chat()})}
+  function add(cls,who,txt){var c=$('.chat',body);var p=document.createElement('p');p.className=cls;p.innerHTML=(who?'<b>'+esc(who)+':</b> ':'')+esc(txt);c.appendChild(p);c.scrollTop=c.scrollHeight}
+  function chat(){body.innerHTML='<div class="chat" aria-live="polite"></div><form id="imSend"><label class="sr" for="imMsg">Message</label><input id="imMsg" maxlength="140" placeholder="type here..." autocomplete="off"><button class="btn98" type="submit" style="padding:2px 8px">Send</button></form><div class="small" style="margin-top:4px;display:flex;justify-content:space-between"><span>signed on as <b>'+esc(name)+'</b></span><a href="#" id="imOut">sign off</a></div>';
+    add('sys','','*door opens* Glitzi has signed on.');setTimeout(function(){add('her','Glitzi','hiii '+name+'!!! welcome 2 the pink zone ♥')},700);
+    $('#imSend').addEventListener('submit',function(e){e.preventDefault();var i=$('#imMsg'),v=i.value.trim();if(!v)return;add('me',name,v);i.value='';
+      setTimeout(function(){add('sys','','Glitzi is typing...')},400);
+      setTimeout(function(){$$('.chat p.sys',body).forEach(function(t){if(/typing/.test(t.textContent))t.remove()});var low=v.toLowerCase(),r;
+        if(/beige|grey|gray/.test(low))r='BEIGE?? ur on thin ice bestie 😤';else if(/ca\b|contract|address/.test(low))r='only trust the CA on our official X!! never from a DM ♥';else if(/moon|pump|price|wen/.test(low))r='idk the future but i know its pink. not financial advice!! ✿';else if(/hi|hey|hello|sup/.test(low))r='heyyy ♥♥♥';else r=LINES[Math.random()*LINES.length|0];
+        add('her','Glitzi',r)},1300+Math.random()*900)});
+    $('#imOut').addEventListener('click',function(e){e.preventDefault();ls('bb_sn','');name='';login()})}
+  if(name)chat();else login();
+  $('#imMin').addEventListener('click',function(){im.classList.toggle('mini')});
+  $('#imX').addEventListener('click',function(){im.classList.add('mini');popup('PinkBox IM','💬','PinkBox IM minimized 2 the corner. it will always b there 4 u ♥')});
+  if(innerWidth<700)im.classList.add('mini');
+  $$('[data-friend]').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();im.classList.remove('mini');var f=a.dataset.friend;
+    if(!$('.chat',body)){popup('PinkBox IM','💬','sign on 2 PinkBox IM (bottom left) 2 chat w/ '+esc(f)+'!!')}else add('sys','',f+' is away: "brb, being iconic"')})});
+})();
+
+/* =========================================================
+   SPARKLE CURSOR TRAIL
+   ========================================================= */
+if(!reduce && matchMedia('(pointer:fine)').matches){var last=0,TR=['✦','✧','♥','★'];
+  document.addEventListener('mousemove',function(e){var now=Date.now();if(now-last<45)return;last=now;var s=document.createElement('span');s.className='trail';s.textContent=TR[now%4];s.style.left=e.clientX+'px';s.style.top=e.clientY+'px';s.style.color='hsl('+(300+(now/7%60))+',100%,'+(60+(now%3)*10)+'%)';document.body.appendChild(s);setTimeout(function(){s.remove()},800)},{passive:true})}
+
+/* =========================================================
+   the classic "u r the 1,000,000th visitor" popup (once)
+   ========================================================= */
+if(!ls('bb_won')){setTimeout(function(){ls('bb_won','1');popup('!!! CONGRATULATIONS !!!','🏆','u r the <b class="blink">1,000,000th</b> visitor!!!<br>ur prize: <b>absolutely nothing</b>. but ur pink now so thats cool.',[['claim nothing ♥']],{pink:true})},2500)}
+
+})();
+</script>
+</body>
+</html>
